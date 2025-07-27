@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junaid Shariff | Cosmic Trailblazer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assests/favicon.ico">
+    <!-- Google Fonts for Rajdhani, Exo 2, Space Grotesk, and Orbitron -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Exo+2:wght@400;600&family=Orbitron:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">PORTFOLIO</div>
+        <ul class="nav-links">
+            <li><a href="#about" class="nav-link">About Me</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Connect Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section with Particle Background -->
+<section id="about">
+    <canvas id="particle-canvas"></canvas>
+    <div class="cosmic-wave"></div>
+    <h2>About Me</h2>
+    <div class="about-container">
+        <img src="assests/po.jpg" alt="Junaid Sharif" class="profile-img">
+        <div class="about-text">
+            <p>Hi, I’m Junaid Shariff! Aspiring AI Engineer </p>
+            <p>Passionate about AI and machine learning, I love building intelligent solutions that solve real-world problems. I work with PyTorch , TensorFlow and Power BI, developing web apps and contributing to open-source. Excited to collaborate and push the boundaries of technology!</p>
+            <p>Let’s connect and innovate together!</p>
+            <div class="about-buttons">
+                <button class="voice-btn">Say Hello</button>
+                <a href="assests/Junaid_Sharif_Resume.pdf" class="download-btn" download>Download CV</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Skills Section with Grid Layout -->
+    <section id="skills">
+        <div class="cosmic-wave"></div>
+        <h2>Skills</h2>
+        <p class="skills-subtitle">Technologies I work with</p>
+        <div class="skill-grid">
+            <div class="skill-card" data-tech="Python"><img src="assests/python-logo.svg" alt="Python" class="custom-icon"><span>Python</span></div>
+           <div class="skill-card" data-tech="JavaScript"><img src="assests/javascript-logo.svg" alt="JavaScript" class="custom-icon"><span>JavaScript</span></div>
+           <div class="skill-card" data-tech="HTML5"><img src="assests/html5-logo.svg" alt="HTML5" class="custom-icon"><span>HTML5</span></div>
+           <div class="skill-card" data-tech="CSS3"><img src="assests/css3-logo.svg" alt="CSS3" class="custom-icon"><span>CSS3</span></div>
+           <div class="skill-card" data-tech="C"><img src="assests/c-1.svg" alt="C" class="custom-icon"><span>C</span></div>
+           <div class="skill-card" data-tech="React"><img src="assests/react-logo.svg" alt="React" class="custom-icon"><span>React</span></div>
+           <div class="skill-card" data-tech="GitHub"><img src="assests/github-logo.svg" alt="GitHub" class="custom-icon"><span>GitHub</span></div>
+           <div class="skill-card" data-tech="MongoDB"><img src="assests/mongodb-logo.svg" alt="MongoDB" class="custom-icon"><span>MongoDB</span></div>
+            <div class="skill-card" data-tech="Power BI"><i class="fas fa-chart-pie"></i><span>Power BI</span></div>
+            <div class="skill-card" data-tech="Tableau"><i class="fas fa-chart-line"></i><span>Tableau</span></div>
+            <div class="skill-card" data-tech="PyTorch"><img src="assests/Pytorch.svg" alt="PyTorch" class="custom-icon"><span>PyTorch</span></div>
+            <div class="skill-card" data-tech="TensorFlow"><img src="https://www.tensorflow.org/images/tf_logo_social.png" alt="TensorFlow" class="custom-icon"><span>TensorFlow</span></div>
+        </div>
+    </section>
+
+    <!-- Projects Section with Enhanced Images -->
+    <section id="projects">
+        <div class="cosmic-wave"></div>
+        <h2>Projects</h2>
+        <div class="star-grid">
+            <div class="star-card">
+                <img src="assests/skin.png" alt="Skin Lesions Detection" class="project-img">
+                <h3>Skin Lesions Detection</h3>
+                <p> This project contains a PyTorch
+                    based implementation for detecting 
+                    various types of skin lesions using a 
+                    fine-tuned EfficientNet-B4 model</p>
+                <a href="https://github.com/insjunaid/Skin-Lesions-Detection-using-deep-learning" target="_blank" class="view-code">View Code</a>
+            </div>
+            <div class="star-card">
+                <img src="assests/KIDNEY.webp" alt="Kidney Condition Prediction" class="project-img">
+                <h3>AI-Powered Kidney Prediction</h3>
+                <p> This project contains a PyTorch
+                    based implementation for detecting 
+                    kidney conditions using CT scan 
+                    images </p>
+                <a href="https://github.com/insjunaid/AI-Powered-Kidney-Condition-Prediction" target="_blank" class="view-code">View Code</a>
+            </div>
+            <div class="star-card">
+                <img src="assests/iris.png" alt="Iris Flower Classification" class="project-img">
+                <h3>Iris Flower Classification</h3>
+                <p>This project is a web-based 
+                    application that predicts the 
+                    species of an Iris flower based on 
+                    user input.</p>
+                <a href="https://github.com/insjunaid/IRIS-Flower-classification" target="_blank" class="view-code">View Code</a>
+            </div>
+            <div class="star-card">
+                <img src="assests/electron.webp" alt="BG Noter" class="project-img">
+                <h3>BG Noter</h3>
+                <p>The Text Background App is an 
+                    Electron-based desktop application 
+                    that allows users to type in a 
+                    textarea element and log the 
+                    entered text to the console</p>
+                <a href="https://github.com/insjunaid/ELECTRON-BASED-TEXT-BACKGROUND-APP" target="_blank" class="view-code">View Code</a>
+            </div>
+            <div class="star-card">
+                <img src="assests/F.webp" alt="Flowers Classification" class="project-img">
+                <h3>Flowers Classification</h3>
+                <p>This project contains a PyTorch
+                    based implementation for 
+                    classifying flower images into 17 
+                    categories</p>
+                <a href="https://github.com/insjunaid/Flowers-Classification-Using-Deep-learning" target="_blank" class="view-code">View Code</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="cosmic-wave"></div>
+        <h2>Connect Me</h2>
+        <div class="comms-panel">
+            <a href="mailto:shariffjunaid2004@gmail.com" class="contact-link">Email</a>
+            <a href="https://www.linkedin.com/in/junaid-shariff10/" target="_blank" class="contact-link">LinkedIn</a>
+            <a href="https://github.com/insjunaid" target="_blank" class="contact-link">GitHub</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Junaid Shariff | Crafted with Code and Vision</p>
+    </footer>
+
+    <!-- Three.js for Particle Background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

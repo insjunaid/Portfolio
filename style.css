@@ -1,0 +1,378 @@
+/* Font and Icon Setup */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Exo+2:wght@400;600&family=Orbitron:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap');
+body {
+    background: linear-gradient(135deg, #1A233A 0%, #2A4066 100%);
+    color: #F5F5F5;
+    font-family: 'Exo 2', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(26, 35, 58, 0.95);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(74, 90, 138, 0.5);
+}
+
+.nav-brand {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.8rem;
+    color: #8A9AFF;
+    text-shadow: 0 0 15px #8A9AFF, 0 0 5px #4A5A8A;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    font-family: 'Space Grotesk', sans-serif;
+    color: #D1D5DB;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 1.2rem;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.nav-link:hover {
+    color: #8A9AFF;
+    text-shadow: 0 0 20px #8A9AFF;
+}
+
+/* About Section with Particle Background */
+#about {
+    padding: 100px 20px 80px;
+    text-align: center;
+    background: linear-gradient(135deg, #1A233A 0%, #2A4066 70%);
+    position: relative;
+    overflow: hidden;
+}
+
+#particle-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.cosmic-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(90deg, rgba(138, 154, 255, 0.1), rgba(107, 122, 160, 0.3), rgba(138, 154, 255, 0.1));
+    animation: waveAnimation 5s infinite linear;
+    z-index: 1;
+}
+
+@keyframes waveAnimation {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+#about h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    color: #8A9AFF;
+    text-shadow: 0 0 20px rgba(138, 154, 255, 0.7);
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+    color: #E5E7EB;
+}
+
+.profile-img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 6px solid #8A9AFF;
+    box-shadow: 0 0 30px rgba(138, 154, 255, 0.7);
+    transition: transform 0.3s;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+.about-buttons {
+    margin-top: 25px;
+}
+
+.voice-btn, .download-btn {
+    background: linear-gradient(45deg, #4A5A8A, #6B7AA0);
+    border: none;
+    padding: 15px 35px;
+    color: #F5F5F5;
+    cursor: pointer;
+    border-radius: 35px;
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    box-shadow: 0 6px 20px rgba(74, 90, 138, 0.6);
+}
+
+.voice-btn:hover, .download-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(107, 122, 160, 0.8);
+}
+
+/* Skills Section with Grid Layout */
+#skills {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #2A4066 0%, #020711 100%);
+}
+
+#skills .cosmic-wave {
+    top: 0;
+}
+
+#skills h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    color: #8A9AFF;
+    text-shadow: 0 0 20px rgba(138, 154, 255, 0.7);
+    margin-bottom: 20px;
+}
+
+.skills-subtitle {
+    color: #D1D5DB;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    font-family: 'Exo 2', sans-serif;
+    text-shadow: 0 0 10px #6B7AA0;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.skill-card {
+    background: rgba(42, 64, 102, 0.9);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid rgba(138, 154, 255, 0.6);
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-card:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 25px rgba(138, 154, 255, 0.9);
+}
+
+.skill-card i, .skill-card .custom-icon {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    color: #8A9AFF;
+    transition: transform 0.3s;
+}
+
+.skill-card:hover i, .skill-card:hover .custom-icon {
+    animation: rotateIcon 4s linear infinite;
+}
+
+@keyframes rotateIcon {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.custom-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.skill-card span {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 0.9rem;
+    color: #F5F5F5;
+}
+
+
+
+/* Projects Section */
+#projects {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #1A233A 0%, #2A4066 70%);
+}
+
+#projects .cosmic-wave {
+    top: 0;
+}
+
+#projects h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    color: #8A9AFF;
+    text-shadow: 0 0 20px rgba(138, 154, 255, 0.7);
+    margin-bottom: 40px;
+}
+
+.star-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Reduced from 340px to 280px */
+    gap: 40px; /* Slightly reduced gap for comfort */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.star-card {
+    background: rgba(74, 90, 138, 0.3);
+    padding: 20px; /* Reduced from 30px to 20px */
+    border-radius: 25px;
+    transition: all 0.3s;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(138, 154, 255, 0.3);
+}
+
+.star-card:hover {
+    transform: translateY(-15px);
+    background: rgba(74, 90, 138, 0.5);
+    box-shadow: 0 15px 45px rgba(138, 154, 255, 0.8);
+}
+
+.project-img {
+    width: 100%;
+    height: 200px; /* Reduced from 280px to 200px */
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 20px; /* Reduced from 25px to 20px */
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.star-card:hover .project-img {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.view-code {
+    display: inline-block;
+    margin-top: 15px; /* Reduced from 20px to 15px */
+    padding: 10px 20px; /* Reduced from 12px 25px to 10px 20px */
+    background: linear-gradient(45deg, #4A5A8A, #6B7AA0);
+    color: #F5F5F5;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background 0.3s, transform 0.3s;
+    font-family: 'Rajdhani', sans-serif;
+    box-shadow: 0 6px 20px rgba(74, 90, 138, 0.6);
+}
+
+.view-code:hover {
+    background: linear-gradient(45deg, #6B7AA0, #8A9AFF);
+    transform: scale(1.05);
+}
+
+
+
+/* Contact Section */
+#contact {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #2A4066 0%, #1A233A 100%);
+}
+
+#contact .cosmic-wave {
+    top: 0;
+}
+
+#contact h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    color: #8A9AFF;
+    text-shadow: 0 0 20px rgba(138, 154, 255, 0.7);
+    margin-bottom: 40px;
+}
+
+.comms-panel {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 35px;
+    background: linear-gradient(45deg, #2A4066, #4A5A8A);
+    color: #F5F5F5;
+    text-decoration: none;
+    border-radius: 35px;
+    transition: background 0.3s, transform 0.3s;
+    font-family: 'Rajdhani', sans-serif;
+    box-shadow: 0 6px 20px rgba(74, 90, 138, 0.5);
+}
+
+.contact-link:hover {
+    background: linear-gradient(45deg, #4A5A8A, #6B7AA0);
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(107, 122, 160, 0.7);
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #1A233A;
+    color: #D1D5DB;
+    font-size: 1rem;
+    border-top: 1px solid rgba(209, 213, 219, 0.1);
+    font-family: 'Exo 2', sans-serif;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
